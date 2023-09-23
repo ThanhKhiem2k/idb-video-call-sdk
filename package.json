@@ -1,0 +1,90 @@
+{
+  "name": "idbcallservice",
+  "version": "0.0.1",
+  "private": true,
+  "source": "src/index",
+  "react-native": "src/index",
+  "types": "lib/typescript/index.d.ts",
+  "main": "lib/commonjs/index",
+  "module": "lib/module/index",
+  "files": [
+    "src",
+    "lib",
+    "android",
+    "ios",
+    "cpp",
+    "!lib/typescript/example",
+    "!ios/build",
+    "!**/__fixtures__",
+    "!**/__mocks__"
+  ],
+  "scripts": {
+    "a": "react-native run-android",
+    "i": "react-native run-ios",
+    "lint": "eslint .",
+    "start": "react-native start",
+    "test": "jest",
+    "prepare": "bob build",
+    "wm": "watchman watch-del-all; watchman watch-del-all",
+    "rm": "rm -rf node_modules  rm -rf package-lock.json rm -rf yarn.lock rm -rf yarn-error.log rm -fr $TMPDIR/react",
+    "c@a": "cd android ; ./gradlew clean",
+    "c@i": "rm -fr ios/Pods rm -fr ios/Podfile.lock rm -rf ios/build && cd ios && pod deintegrate && pod cache clean --all",
+    "c@all": "yarn wm && yarn c@a && yarn c@i && yarn rm",
+    "b": "yarn && cd ios && pod install",
+    "b@a": "cd android && ./gradlew clean && ./gradlew assembleRelease && ./gradlew bundleRelease"
+  },
+  "author": "IDB",
+  "dependencies": {
+    "@react-native-community/art": "^1.2.0",
+    "@react-native-community/cli-platform-android": "9.0.0",
+    "@react-native-community/cli-platform-ios": "9.0.0",
+    "@react-native-community/netinfo": "^9.4.1",
+    "@zoom/react-native-videosdk": "file:zoom-react-native-videosdk-1.7.5.tgz",
+    "react": "18.2.0",
+    "react-native": "0.71.6",
+    "react-native-indicator": "^1.2.2",
+    "react-native-keyboard-area": "^1.0.6",
+    "react-native-gesture-handler": "^2.8.0",
+    "react-native-paper": "^5.10.1",
+    "react-native-permissions": "3.2.0",
+    "react-native-pure-jwt": "2.2.2",
+    "react-native-reanimated": "^2.16.0",
+    "react-native-rename": "^3.2.13"
+  },
+  "devDependencies": {
+    "@types/jest": "^29.2.1",
+    "@types/react": "^18.2.0",
+    "@types/react-native": "^0.71.6",
+    "typescript": "^4.8.4"
+  },
+  "peerDependencies": {},
+  "jest": {
+    "preset": "react-native",
+    "modulePathIgnorePatterns": [
+      "<rootDir>/lib/"
+    ]
+  },
+  "eslintIgnore": [
+    "node_modules/",
+    "lib/"
+  ],
+  "commitlint": {
+    "extends": [
+      "@commitlint/config-conventional"
+    ]
+  },
+  "react-native-builder-bob": {
+    "source": "src",
+    "output": "lib",
+    "targets": [
+      "commonjs",
+      "module",
+      [
+        "typescript",
+        {
+          "project": "tsconfig.build.json"
+        }
+      ]
+    ]
+  }
+}
