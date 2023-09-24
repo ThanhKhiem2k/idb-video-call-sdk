@@ -4,7 +4,7 @@
 // WHICH IS NOT SAFE TO STORE ON DEVICE!
 // @ts-ignore
 
-import {ZOOM_APP_KEY, ZOOM_APP_SECRET} from '../../config';
+import {ZOOM_APP_KEY, ZOOM_APP_SECRET} from '../config';
 // @ts-ignore
 import jwt from 'react-native-pure-jwt';
 
