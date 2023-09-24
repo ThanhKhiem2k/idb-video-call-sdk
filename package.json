@@ -33,32 +33,40 @@
     "b": "yarn && cd ios && pod install",
     "b@a": "cd android && ./gradlew clean && ./gradlew assembleRelease && ./gradlew bundleRelease"
   },
-  "author": "IDB",
   "dependencies": {
+    "@react-native-async-storage/async-storage": "^1.19.2",
     "@react-native-community/art": "^1.2.0",
+    "@react-native-community/cli-platform-android": "9.0.0",
+    "@react-native-community/cli-platform-ios": "9.0.0",
+    "@react-native-community/clipboard": "^1.5.1",
     "@react-native-community/netinfo": "^9.4.1",
+    "@react-navigation/native": "^6.0.12",
+    "@react-navigation/stack": "6.2.3",
     "@zoom/react-native-videosdk": "file:zoom-react-native-videosdk-1.7.5.tgz",
     "react": "18.2.0",
     "react-native": "0.71.6",
+    "react-native-gesture-handler": "^2.8.0",
     "react-native-indicator": "^1.2.2",
     "react-native-keyboard-area": "^1.0.6",
-    "react-native-gesture-handler": "^2.8.0",
     "react-native-paper": "^5.10.1",
     "react-native-permissions": "3.2.0",
     "react-native-pure-jwt": "2.2.2",
     "react-native-reanimated": "^2.16.0",
-    "react-native-rename": "^3.2.13"
+    "react-native-reanimated-carousel": "^3.3.0",
+    "react-native-rename": "^3.2.13",
+    "react-native-safe-area-context": "^4.7.2",
+    "react-native-screens": "^3.25.0",
+    "react-navigation": "^4.4.4"
   },
   "devDependencies": {
-    "@types/jest": "^29.2.1",
-    "@types/react": "^18.2.0",
-    "@types/react-native": "^0.71.6",
-    "typescript": "^4.8.4",
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",
     "@babel/runtime": "^7.20.0",
     "@react-native-community/eslint-config": "^3.2.0",
     "@tsconfig/react-native": "^2.0.2",
+    "@types/jest": "^29.2.1",
+    "@types/react": "^18.0.24",
+    "@types/react-native": "^0.69.2",
     "@types/react-test-renderer": "^18.0.0",
     "babel-jest": "^29.2.1",
     "babel-plugin-module-resolver": "^5.0.0",
@@ -66,10 +74,8 @@
     "jest": "^29.2.1",
     "metro-react-native-babel-preset": "0.73.9",
     "prettier": "^2.4.1",
-    "react-test-renderer": "18.2.0"
-  },
-  "peerDependencies": {
-    "@react-native-community/cli-platform-android": "*"
+    "react-test-renderer": "18.2.0",
+    "typescript": "^4.8.4"
   },
   "jest": {
     "preset": "react-native",
@@ -100,4 +106,5 @@
       ]
     ]
   }
+  
 }

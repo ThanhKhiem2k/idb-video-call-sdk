@@ -44,7 +44,6 @@ export default async function generateJwt(
     );
     return token;
   } catch (e) {
-    console.log(e);
     return '';
   }
 }

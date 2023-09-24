@@ -28,11 +28,12 @@ import {
 import NetInfo from '@react-native-community/netinfo';
 import {RNKeyboard, SoftInputMode} from 'react-native-keyboard-area';
 import CheckStatusPermission from '../../components/check-status-permission/checkStatusPermission';
-interface CallScreenProps {
+type CallScreenProps = {
+  navigation: any;
   route: any;
-}
+};
 
-export function CallScreen({route}: CallScreenProps) {
+export function CallScreen({navigation, route}: CallScreenProps) {
   const [isInSession, setIsInSession] = useState(false);
   const [users, setUsersInSession] = useState<ZoomVideoSdkUser[]>([]);
   const [guestScreenUser, setGuestScreenUser] = useState<ZoomVideoSdkUser>();
@@ -369,7 +370,7 @@ export function CallScreen({route}: CallScreenProps) {
 
   const leaveSession = (endSession: boolean) => {
     zoom.leaveSession(endSession);
-    // navigation.goBack();
+    navigation.goBack();
   };
 
   const onPressAudio = async () => {
