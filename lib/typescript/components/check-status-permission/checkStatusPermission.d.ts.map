@@ -1,0 +1,1 @@
+{"version":3,"file":"checkStatusPermission.d.ts","sourceRoot":"","sources":["../../../../src/components/check-status-permission/checkStatusPermission.tsx"],"names":[],"mappings":"AAAA,OAAO,KAAK,KAAK,MAAM,OAAO,CAAC;AAmB/B,UAAU,qBAAqB;IAC7B,mBAAmB,EAAE,OAAO,CAAC;IAC7B,gBAAgB,EAAE,QAAQ,GAAG,SAAS,CAAC;CACxC;AAED,QAAA,MAAM,qBAAqB,WAAY,qBAAqB,sBAuH3D,CAAC;AAEF,eAAe,qBAAqB,CAAC"}
