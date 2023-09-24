@@ -36,8 +36,6 @@
   "author": "IDB",
   "dependencies": {
     "@react-native-community/art": "^1.2.0",
-    "@react-native-community/cli-platform-android": "9.0.0",
-    "@react-native-community/cli-platform-ios": "9.0.0",
     "@react-native-community/netinfo": "^9.4.1",
     "@zoom/react-native-videosdk": "git+https://github.com/ThanhKhiem2k/zoom-react-native-videosdk",
     "react": "18.2.0",
