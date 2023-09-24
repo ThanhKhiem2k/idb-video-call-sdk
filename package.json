@@ -37,7 +37,7 @@
   "dependencies": {
     "@react-native-community/art": "^1.2.0",
     "@react-native-community/netinfo": "^9.4.1",
-    "@zoom/react-native-videosdk": "git+https://github.com/ThanhKhiem2k/zoom-react-native-videosdk",
+    "@zoom/react-native-videosdk": "file:zoom-react-native-videosdk-1.7.5.tgz",
     "react": "18.2.0",
     "react-native": "0.71.6",
     "react-native-indicator": "^1.2.2",
