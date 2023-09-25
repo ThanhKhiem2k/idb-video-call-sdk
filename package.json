@@ -24,7 +24,6 @@
     "lint": "eslint .",
     "start": "react-native start",
     "test": "jest",
-    "prepare": "bob build",
     "wm": "watchman watch-del-all; watchman watch-del-all",
     "rm": "rm -rf node_modules  rm -rf package-lock.json rm -rf yarn.lock rm -rf yarn-error.log rm -fr $TMPDIR/react",
     "c@a": "cd android ; ./gradlew clean",
@@ -106,5 +105,4 @@
       ]
     ]
   }
-  
 }
