@@ -1,1 +1,1 @@
-{"version":3,"names":["CallScreen"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":"AAAA,SAASA,UAAU,QAAQ,uBAAuB;AAClD,cAAc,6BAA6B"}
+{"version":3,"names":["Context","ZoomVideoSdkProvider","ZoomView","useZoom","CallScreen"],"sourceRoot":"../../src","sources":["index.tsx"],"mappings":"AAAA,SAASA,OAAO,QAAQ,6BAA6B;AACrD,SAASC,oBAAoB,QAAQ,6BAA6B;AAClE,SAASC,QAAQ,QAAQ,6BAA6B;AACtD,SAASC,OAAO,QAAQ,6BAA6B;AAErD,SAASH,OAAO,EAAEC,oBAAoB,EAAEE,OAAO,EAAED,QAAQ;AACzD,SAASE,UAAU,QAAQ,uBAAuB;AAClD,cAAc,6BAA6B"}
